@@ -62,7 +62,9 @@ const PowerballPredictor = () => {
       
       <Container>
       <Row>
-        <Col><h1>Powerball Predictor</h1></Col>
+        <Col><h1 className='title-pw'>Powerball Predictor</h1>
+              <h2 className='border-pw vertical-text'>POWERBALL</h2>
+        </Col>
       </Row>
       <Row> 
         <Col><textarea
@@ -92,7 +94,9 @@ const PowerballPredictor = () => {
      
       
 
-      <button onClick={generateLuckyNumbers}>Generate Lucky Numbers</button>
+      <button 
+      className= "generate-button"
+      onClick={generateLuckyNumbers}>Generate Lucky Numbers</button>
       {error && <p className="error">{error}</p>}
       {generatedNumbers.mainNumbers && generatedNumbers.mainNumbers.length > 0 && (
         <div className="numbers-box">

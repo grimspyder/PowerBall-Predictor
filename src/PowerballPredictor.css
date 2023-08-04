@@ -1,23 +1,69 @@
+
+.title-pw {
+    color: rgb(3, 3, 3);
+}
+
+.border-pw {
+    font-style: italic;
+    color: rgb(250, 250, 251);
+    background-color: red;
+}
+
+.vertical-text {
+    transform: rotate(-90deg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 40px; /* Adjust the width as needed */
+    writing-mode: vertical-lr; /* For modern browsers */
+    text-orientation: upright; /* For modern browsers */
+    white-space: nowrap; /* Ensure text doesn't wrap */
+
+  }
+
 .name-box {
     border: 2px solid red;
     border-radius: 5px;
     transition: width 2s;
     resize: none;
-    min-width: 50px;
-    max-width: 50%;
-    min-height: 10%;
-    max-height: 200px;
-    
+    font-size: 2.5em;
+    min-width: 30vw;
+    max-width: 60vw;
+    min-height: 6vh;
+    max-height: 8vh;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);    
 }
 
 .dream-box {
     resize: none;
     color: blue;
-    min-width: 50px;
-    max-width: 200px;
-    min-height: 50px;
-    max-height: 200px;
-    
-    
-    
+    font-size: 2.4em;
+    min-width: 80vw;
+    max-width: 80vw;
+    min-height: 25vh;
+    max-height: 70vh;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);       
+}
+
+.generate-button {
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.1em;    
+}
+
+.numbers-box {
+    position: absolute;
+    top: 80%;
+    left: 27%;
+
+
 }
